@@ -1,5 +1,7 @@
 p {
   font-family: "Lucinda Sans", Georgia, Serif;
+  color: rgba(30, 32, 20, 0.85);
+  text-align: center;
 }
 
 html {
@@ -8,15 +10,20 @@ html {
     font-family: 'Bree Serif', serif;
 }
 
+h1 {
+  color: rgba(30, 32, 20, 0.85);
+  text-align: center;
+}
+
 .topnav {
-    background-color: #333;
+    background-color: #bd4932;
     overflow: hidden;
 }
 
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+    float: right;
+    box-sizing: border-box;
+    color: rgba(30, 32, 20, 0.85);
     text-align: right;
     padding: 14px 16px;
     text-decoration: none;
@@ -24,7 +31,7 @@ html {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #db9e36;
     color: black;
 }
 
