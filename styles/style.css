@@ -154,16 +154,30 @@ ul {
 .startReadingContainer {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100;
 }
 
 .startReading {
+  text-align: right;
   display: flex;
-  background-color: #105a63;
+  color: rgba(30, 32, 20, 0.85);
+  background-color: #db9e36;
   border-radius: 15px;
-  height: 150px;
-  width: 25%;
+  height: auto;
+  width: auto;
   margin: 15px;
+  padding: 25px;
   align-items: center;
   justify-content: center;
+}
+
+.bottomContainer {
+  position: relative;
+  text-align: center;
+}
+
+.bottom {
+  color: rgba(30, 32, 20, 0.85);
+  position: fixed;
+  bottom: 5px;
 }

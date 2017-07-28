@@ -22,23 +22,29 @@
 
     <div class="startReadingContainer">
       <div class="startReading">
-        <form action="/my-handling-form-page" method="post">
-          <div>
+        <form action="" method="get">
+          <p><div>
             <label for="title">book title</label>
             <input type="text" id="title" name="book title" />
-          </div>
-          <div>
+          </div></p>
+          <p><div>
             <label for="author">author</label>
             <input type="text" id="author" name="author" />
-          </div>
-          <div>
+          </div></p>
+          <p><div>
             <label for="page length">page length</label>
             <input type="text" id="page length" name="page length" />
-          </div>
-          <div>
+          </div></p>
+          <p><div>
             <label for="notes">notes</label>
             <textarea id="notes" name="notes"></textarea>
-          </div>
+          </div></p>
+
+          <p><input type="radio" name="pace" value="slow">slow pace<br></p>
+          <p><input type="radio" name="pace" value="moderate">moderate pace<br></p>
+          <p><input type="radio" name="pace" value="fast">fast pace<br></p>
+          <input type="submit" value="Submit">
+
         </form>
       </div>
     </div>
@@ -46,6 +52,6 @@
 
 
 
-    <p>written and coded by sydney.</p>
+    <div class="bottomContainer"><div class="bottom">written and coded by sydney.</div></div>
   </body>
 </html>
