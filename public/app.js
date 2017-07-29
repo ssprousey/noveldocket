@@ -1,3 +1,3 @@
-angular.module('noveldocket', [])config(function() {
+angular.module('noveldocket', []).config(function() {
 
   });

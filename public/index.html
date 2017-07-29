@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="noveldocket">
   <head>
     <link rel="shortcut icon" href="/teal book favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css"></link>
   </head>
 
-  <body>
+  <body ng-controller="startReadingCtrl">
 
+    {{test}}
     <div class="topnav">
       <a href="myNovels.html">My Novels</a>
       <a href="startReading.html">Start Reading</a>
@@ -22,28 +23,28 @@
 
     <div class="startReadingContainer">
       <div class="startReading">
-        <form action="" method="get">
+        <form>
           <p><div>
             <label for="title">book title</label>
-            <input type="text" id="title" name="book title" />
+            <input ng-model="book.title" type="text" id="title" name="book title" />
           </div></p>
           <p><div>
             <label for="author">author</label>
-            <input type="text" id="author" name="author" />
+            <input ng-model="book.author" type="text" id="author" name="author" />
           </div></p>
           <p><div>
             <label for="page length">page length</label>
-            <input type="text" id="page length" name="page length" />
+            <input ng-model="book.page_length"type="text" id="page length" name="page length" />
           </div></p>
           <p><div>
             <label for="notes">notes</label>
-            <textarea id="notes" name="notes"></textarea>
+            <textarea ng-model="book.notes" id="notes" name="notes"></textarea>
           </div></p>
 
           <p><input type="radio" name="pace" value="slow">slow pace<br></p>
           <p><input type="radio" name="pace" value="moderate">moderate pace<br></p>
           <p><input type="radio" name="pace" value="fast">fast pace<br></p>
-          <input type="submit" value="Submit">
+          <button ng-click="saveBook(book)">Submit</button>
 
         </form>
       </div>
@@ -51,7 +52,11 @@
 
 
 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./controllers/startReadingCtrl.js"></script>
 
-    <div class="bottomContainer"><div class="bottom">written and coded by sydney.</div></div>
+    <script src="./services/startReadingService.js"></script>
+    <!-- <div class="bottomContainer"><div class="bottom">written and coded by sydney.</div></div> -->
   </body>
 </html>
